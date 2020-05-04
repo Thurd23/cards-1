@@ -1,0 +1,20 @@
+public class Card {
+    String currentS;
+    String currentR;
+    int currentV;
+    Suit aSuit;
+    Rank aRank;
+    public Card(String suitN, String rankN, int rankV){
+        currentR=rankN;
+        currentS=suitN;
+        currentV=rankV;
+        aSuit = new Suit(currentS,0);
+        aRank = new Rank(currentR,currentV);
+    }
+    public String toString(){
+        return(aRank.toString()+" of "+aSuit.toString());
+    }
+    public int getV(){
+        return aRank.getV();
+    }
+}
