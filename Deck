@@ -1,0 +1,48 @@
+
+Public class Deck{
+    int ds = 52;//number of cards desired for the deck
+    int nd = ds/52 //Allows for multiple decks to be used, required for some card games.
+    Private Card[]deck;
+    int cc = 0;
+    deck= new Card[ds];
+for(int k= 0;k<nd;k++)// Multiple deck functionality
+    {
+        for(int i=0, i<4;i++)//ids suits
+        {
+            if(i=0){
+                Suit= "Diamonds"
+            }
+            else if(i=1){
+                Suit= "Clubs"
+            }
+            else if(i=2){
+                Suit= "Spades"
+            }
+            else if(i=3){
+                Suit= "Hearts"
+            }
+            for(int l=1, l<14;l++)//ids ranks
+            {
+                if(l=1){
+                    Rank="Ace"
+                    elseif(l=11){
+                        Rank="Jack"
+                    }
+                    elseif(l=12){
+                        Rank="Queen"
+                    }
+                    elseif(l=13){
+                        Rank="King"
+                    }
+else{
+                        Rank=l
+                        Deck[i]=new Card(Suit,Rank)//enstates cards
+                    }
+                }
+            }
+
+
+
+
+
+
